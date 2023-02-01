@@ -1,0 +1,75 @@
+1.    Python Program to check whether the input string is palindrome.
+ 
+PROGRAM:
+ 
+string=input("Enter a string")
+if(string==string[::-1]):
+   print("The string is a palindrome")
+else:
+   print("Thr string is not a palindrome")
+ 
+OUTPUT:
+ 
+Enter a string computer program
+The string is not a palindrome
+Enter a stringdad
+The string is a palindrome
+  
+ --------------------------------------------------------------------------------------------------------------------
+ 
+2.    Reverse the string
+ 
+PROGRAM:
+ 
+string=input("Enter a string:")
+str=""
+for i in string:
+    str=i+str
+print("Reversed string:",str)
+ 
+OUTPUT:
+ 
+Enter a string:WELCOME
+Reversed string: EMOCLEW
+
+ --------------------------------------------------------------------------------------------------------------------
+ 3.    Find the length of the string
+ 
+PROGRAM:
+         
+string=input("Enter a string:")
+count=0
+for i in string:
+    count+=1
+print(count)
+ 
+OUTPUT:
+ 
+Enter a string:WELCOME
+7
+ 
+----------------------------------------------------------------------------------------------------------------                             
+ 
+4.    Write a program that accepts  a string from the user and display the string after replacing the vowel character with @
+ 
+PROGRAM:
+ 
+str=input("Enter the string:")
+char=input("Enter a character:")
+newstr=""
+for i in range(len(str)):
+    if str[i]=="a" or str[i]=="e" or str[i]=="i" or str[i]=="o" or str[i]=="u":
+        newstr=newstr+char
+    else:
+        newstr=newstr+str[i]
+print("\n original string:",str)
+print("new string:",newstr)
+ 
+OUTPUT:
+ 
+Enter the string:college
+Enter a character:@
+ 
+ original string: college
+new string: c@ll@g@
+
